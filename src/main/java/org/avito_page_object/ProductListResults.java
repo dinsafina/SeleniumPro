@@ -26,21 +26,6 @@ public class ProductListResults {
             System.out.println(priceSublist.get(i).getText() + ", цена: " + priceSublist2.get(i).getText());
         }
     }
-
-    public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Professional\\Documents\\chromedriver.exe");
-        ChromeDriver driver = new ChromeDriver();
-        driver.get("https://www.avito.ru/");
-
-        GeneralPage generalPage = new GeneralPage(driver);
-        generalPage.clickElectronics();
-
-        ProductListPage productListPage = new ProductListPage(driver);
-        productListPage.clickOfficeEquipment();
-
-        ProductListResults productListResults = new ProductListResults(driver);
-        productListResults.showFirstThreeResults();
-    }
 }
 
 
