@@ -8,7 +8,7 @@ public class TestUserJourney {
    static WebDriver driver;
 
         public static void main(String[] args) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Professional\\Documents\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
             driver = new ChromeDriver();
             driver.get("https://www.avito.ru/");
 
